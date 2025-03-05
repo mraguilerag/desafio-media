@@ -12,8 +12,8 @@ body{
 
 nav{
     grid-area: menu;
-    background-color:rgb(25, 25, 25);
     height: 100px;
+    border-bottom: 0.5px solid gray;
 }
 
 nav img{
@@ -24,15 +24,25 @@ nav img{
 
 .filtros{
     grid-area: filtros ;
-    justify-self: center;
-    font-weight: 400;
-    margin: 15px;
+    background-color: rgba(44, 44, 44, 0.941);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 13px;
+}
+
+.filtros h1{
+    font-weight: 200;
+    margin: 0%;
+    padding-bottom: 5px;
 }
 
 select{
     height: 35px;
-    width: 80%
-    ;
+    max-width: 80%;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 main{
@@ -59,6 +69,19 @@ main{
 .card img{width: 100%;}
 
 .card div{padding: 30px;}
+
+.card-price{
+    font-weight: bold;
+}
+
+button{
+    background-color: rgba(44, 44, 44, 0.941);
+    color: white;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 15%;
+}
 
 footer{
     grid-area: pie;
