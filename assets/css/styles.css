@@ -1,0 +1,81 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    'menu'
+    'filtros'
+    'principal'
+    'pie'
+    ;
+    margin: 0%;
+    font-family: "Montserrat";
+}
+
+nav{
+    grid-area: menu;
+    background-color:rgb(25, 25, 25);
+    height: 140px;
+}
+
+nav img{
+    width: 400px;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.filtros{
+    grid-area: filtros ;
+}
+
+main{
+    grid-area: principal;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 1fr;
+    border: 1px solid black;
+}
+
+.card img{width: 100%;}
+
+.card div{padding: 30px;}
+
+footer{
+    grid-area: pie;
+}
+
+select{width: 100%;}
+
+@media (min-width: 576px) {
+    body{
+        grid-template-columns: 1fr 6fr;
+        grid-template-areas: 
+        'menu menu'
+        'filtros principal'
+        'pie pie';
+    }
+
+    .menu-item{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card{
+        width: 40%;
+    }
+}
