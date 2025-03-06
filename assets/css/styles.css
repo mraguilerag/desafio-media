@@ -18,18 +18,20 @@ nav{
 
 .logo{
     display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 65px;
     border: 1px solid green;
 }
 
 .hamburguer{
-    border: 1px solid red;
     align-self: center;
 }
 
 nav img{
     width: 210px;
-    margin-top: 23px;
-    margin-left: 23px;
+   margin: 30px;
+   margin-bottom: 25px;
 }
 
 .filtros{
