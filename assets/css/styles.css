@@ -18,10 +18,9 @@ nav{
 
 .logo{
     display: flex;
+    justify-content: space-around;
     align-items: center;
     height: 100%;
-    gap: 65px;
-    border: 1px solid green;
 }
 
 .hamburguer{
@@ -30,8 +29,7 @@ nav{
 
 nav img{
     width: 210px;
-   margin: 30px;
-   margin-bottom: 25px;
+    margin-right: 60px;
 }
 
 .filtros{
