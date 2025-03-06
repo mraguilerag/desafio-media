@@ -16,10 +16,20 @@ nav{
     border-bottom: 0.5px solid gray;
 }
 
+.logo{
+    display: flex;
+    border: 1px solid green;
+}
+
+.hamburguer{
+    border: 1px solid red;
+    align-self: center;
+}
+
 nav img{
-    width: 230px;
-    margin-top: 20px;
-    margin-left: 25px;
+    width: 210px;
+    margin-top: 23px;
+    margin-left: 23px;
 }
 
 .filtros{
@@ -68,7 +78,15 @@ main{
 
 .card img{width: 100%;}
 
-.card div{padding: 30px;}
+.card div{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text{
+    margin: 0%;
+}
 
 .card-price{
     font-weight: bold;
@@ -78,9 +96,11 @@ button{
     background-color: rgba(44, 44, 44, 0.941);
     color: white;
     padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
     border-radius: 15%;
+    align-self: center;
+   
 }
 
 footer{
