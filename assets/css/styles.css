@@ -16,35 +16,42 @@ nav{
     border-bottom: 0.5px solid gray;
 }
 
-.logo{
+.inicio{
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
     height: 100%;
 }
 
-.hamburguer{
-    align-self: center;
+.logo{
+    display: flex;
+    align-items: center;
+    margin-right: 90px;
+    gap: 12px ;
 }
 
 .logo img{
-    width: 100px;
-    margin-right: 60px;
-    margin-top: 5px;
-    margin-left: 3px;
+    width: 50px;
+    height: 40px;
+}
+.luxe{
+    display: flex;
+    font-size: 20px;
 }
 
-.logo h1{
-    font-size: 25px;
+.hamburguer{
+    margin-right: 15px;
 }
 
 .filtros{
     grid-area: filtros ;
-    color: black;
+    background-color: black;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .filtros p{
@@ -117,10 +124,11 @@ main{
     background-color: black;
     color: white;
     padding: 10px;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 45px;
+    padding-right: 45px;
     align-self: center;
     font-family: "Montserrat";
+    border: none;
     border-radius: 5px;
 }
 
@@ -134,13 +142,18 @@ main{
     width: 40px;
     height: 40px;
     background-color: white;
-    border-color: gray;
+    border-color: #d9bc8b;
     border-radius: 2px;
 
 }
 footer{
     grid-area: pie;
-    background-color: black;
+    color:black;
+    text-align: center;
+    margin: 0%;
+}
+ 
+.icon{
 }
 
 @media (max-width: 576px){
