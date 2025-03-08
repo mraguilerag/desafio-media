@@ -28,7 +28,7 @@ nav{
 }
 
 nav img{
-    width: 210px;
+    width: 100px;
     margin-right: 60px;
     margin-top: 5px;
     margin-left: 3px;
@@ -36,25 +36,27 @@ nav img{
 
 .filtros{
     grid-area: filtros ;
-    background-color: black; 
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 13px;
+    padding-top: 17px;
 }
 
-.filtros h1{
-    font-weight: 200;
+.filtros p{
+    font-size: 20px;
     margin: 0%;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
+    padding-top: 5px;
 }
 
 select{
     height: 35px;
     max-width: 80%;
     border-radius: 8px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-family: "Montserrat";
 }
 
 main{
@@ -74,16 +76,24 @@ main{
     display: flex;
     flex-direction: column;
     width: 1fr;
-    border: 1px solid black;
     margin: 30px;
 }
 
-.card img{width: 100%;}
+.card img{
+    width: 100%;
+    border-radius: 15px;
+}
 
 .card div{
     padding: 30px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+.card h2{
+    display: flex;
+    justify-content: center;
 }
 
 .card-text{
@@ -92,6 +102,8 @@ main{
 
 .card-price{
     font-weight: bold;
+    display: flex;
+    justify-content: center;
 }
 
 button{
@@ -100,16 +112,13 @@ button{
     padding: 10px;
     padding-left: 35px;
     padding-right: 35px;
-    border-radius: 15%;
     align-self: center;
-   
+    font-family: "Montserrat";
 }
 
 footer{
     grid-area: pie;
 }
-
-select{width: 100%;}
 
 @media (max-width: 576px){
     .ocultas{
