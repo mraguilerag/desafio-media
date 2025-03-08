@@ -27,11 +27,15 @@ nav{
     align-self: center;
 }
 
-nav img{
+.logo img{
     width: 100px;
     margin-right: 60px;
     margin-top: 5px;
     margin-left: 3px;
+}
+
+.logo h1{
+    font-size: 25px;
 }
 
 .filtros{
@@ -89,15 +93,18 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 0%;
 }
 
 .card h2{
+    margin-top: 0%;
     display: flex;
     justify-content: center;
 }
 
 .card-text{
     margin: 0%;
+    text-align: center;
 }
 
 .card-price{
@@ -106,7 +113,7 @@ main{
     justify-content: center;
 }
 
-button{
+.card button{
     background-color: black;
     color: white;
     padding: 10px;
@@ -114,10 +121,26 @@ button{
     padding-right: 35px;
     align-self: center;
     font-family: "Montserrat";
+    border-radius: 5px;
 }
 
+.paginas{
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+}
+
+.paginas button{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-color: gray;
+    border-radius: 2px;
+
+}
 footer{
     grid-area: pie;
+    background-color: black;
 }
 
 @media (max-width: 576px){
