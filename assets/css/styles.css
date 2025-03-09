@@ -27,6 +27,7 @@ nav{
     display: flex;
     align-items: center;
     margin-right: 90px;
+    padding-top: 10px;
     gap: 12px ;
 }
 
@@ -65,6 +66,7 @@ select{
     height: 35px;
     max-width: 80%;
     border-radius: 8px;
+    border-color: #d9bc8b;
     margin-bottom: 10px;
     width: 100%;
     font-family: "Montserrat";
@@ -72,7 +74,6 @@ select{
 
 main{
     grid-area: principal;
-    background-color: white;
     display: flex;
     flex-direction: column;
 }
@@ -107,6 +108,7 @@ main{
     margin-top: 0%;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .card-text{
@@ -142,18 +144,17 @@ main{
     width: 40px;
     height: 40px;
     background-color: white;
-    border-color: #d9bc8b;
+    border: none;
+    border: 1px solid #d9bc8b;
     border-radius: 2px;
 
 }
 footer{
     grid-area: pie;
+    background-color: #d9bc8b;
     color:black;
     text-align: center;
-    margin: 0%;
-}
- 
-.icon{
+    margin-bottom: 0%;
 }
 
 @media (max-width: 576px){
