@@ -130,7 +130,7 @@ main{
     padding: 16px; /* Aumenta el padding */
     font-size: 16px; /* Aumenta el tamaño de la fuente */
     width: 200px; /* Ajusta el ancho */
-    height: 50px; /* Ajusta la altura */
+    height: 50px; 
     align-self: center;
     font-family: "Montserrat";
     border: none;
@@ -181,13 +181,196 @@ footer p{
 
 @media (min-width: 576px) {
     body{
-        grid-template-columns: 1fr 6fr;
+        grid-template-columns: 2fr 6fr;
         grid-template-areas: 
-        'menu menu'
-        'filtros principal'
-        'pie pie';
+        'menu filtros'
+        'menu principal'
+        'pie principal';
     }
 
+    .hamburguer{
+        display: none;
+    }
+
+    nav{
+        min-height:100v
+        border-right: 0.5px solid gray;
+    }
+    
+    .inicio{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+    }
+    
+    .logo{
+        display: flex;
+        align-items: center;
+        margin-right: 90px;
+        padding-top: 10px;
+        gap: 12px ;
+    }
+    
+    .logo img{
+        width: 50px;
+        height: 40px;
+    }
+    .luxe{
+        display: flex;
+        font-size: 20px;
+    }
+    
+    .hamburguer{
+        margin-right: 15px;
+    }
+    
+    .filtros{
+        grid-area: filtros ;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .filtros p{
+        font-size: 20px;
+        margin: 0%;
+        padding-bottom: 10px;
+        padding-top: 5px;
+    }
+    
+    select{
+        height: 35px;
+        max-width: 80%;
+        border-radius: 8px;
+        border-color: #d9bc8b;
+        margin-bottom: 10px;
+        width: 100%;
+        font-family: "Montserrat";
+    }
+    
+    main{
+        grid-area: principal;
+        display: flex;
+        flex-direction: column;
+        margin-top: 8px;
+    }
+    
+    .cards{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: 1fr;
+        margin: 30px;
+    }
+    
+    .card img{
+        width: 100%;
+        border-radius: 15px;
+        margin: 0%;
+        padding: 0%;
+    }
+    
+    .card div{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 0%;
+    }
+    
+    .card h2{
+        margin-bottom: 10px;
+        padding-bottom: 0%;
+        font-size: medium;
+        margin-top: 0%;
+        padding-top: 0%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .card-text{
+        margin-top: 0%;
+        padding-top: 0%;
+        font-size: small;
+        margin: 0%;
+        text-align: center;
+    }
+    
+    .card-price{
+        font-size: small;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .card button {
+        background-color: black;
+        color: white;
+        padding: 5px; /* Aumenta el padding */
+        font-size: 10px; /* Aumenta el tamaño de la fuente */
+        width: 150px; /* Ajusta el ancho */
+        height: 25px; 
+        align-self: center;
+        font-family: "Montserrat";
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        margin-top: 0%;
+    }
+    
+    .paginas{
+        display: flex;
+        justify-content: center;
+        margin: 0%;
+        margin-top: 23px;
+    }
+    
+    .paginas button{
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        border: none;
+        border: 1px solid #d9bc8b;
+        border-radius: 2px;
+    }
+    
+    footer{
+        grid-area: pie;
+        background-color: black;
+        color:white;
+        min-height: 100px;
+        text-align: center;
+        margin-top: 35px;
+    }
+    
+    .icon{
+        padding-top: 25px;
+    }
+    
+    footer p{
+        margin-top: 0%;
+        padding-bottom: 10px;
+        padding-top: 3px;
+    }
+
+
+}
+
+
+/*
     nav img{
         width: 400px;
         margin-top: 15px;
@@ -208,3 +391,4 @@ footer p{
         width: 40%;
     }
 }
+    */
