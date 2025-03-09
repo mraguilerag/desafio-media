@@ -151,10 +151,20 @@ main{
 }
 footer{
     grid-area: pie;
-    background-color: #d9bc8b;
-    color:black;
+    background-color: black;
+    color:white;
     text-align: center;
     margin-bottom: 0%;
+    margin-top: 30px;
+}
+
+.icon{
+    padding-top: 25px;
+}
+
+footer p{
+    margin-top: 0%;
+    padding-bottom: 10px;
 }
 
 @media (max-width: 576px){
