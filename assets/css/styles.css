@@ -188,6 +188,7 @@ footer p{
         'menu filtros'
         'menu principal'
         'pie principal';
+        height: 100vh;
     }
 
     .hamburguer{
@@ -196,13 +197,22 @@ footer p{
 
     nav{
         border-right: 0.5px solid gray;
-        min-height:100v
     }
 
     .inicio{
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         height: 100vh;
+    }
+
+    .logo{
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+
+    .logo img{
+        width: 70px;
+        height: 60px;
     }
 
     .ocultas{
@@ -211,6 +221,11 @@ footer p{
 
     .ocultas2{
         display: inline;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 30px;
+        
     }
 }
 
