@@ -85,16 +85,20 @@ main{
 }
 
 .cards{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 20px;
+    overflow-y: scroll;
 }
 
 .card{
     display: flex;
     flex-direction: column;
-    width: 1fr;
-    margin: 30px;
+    padding: 30px;
+}
+
+.card:not(:first-child) {
+    display: none;
 }
 
 .card img{
@@ -147,6 +151,7 @@ main{
     justify-content: center;
     margin: 0%;
     margin-top: 23px;
+    padding-bottom: 32px;
 }
 
 .paginas button{
@@ -164,7 +169,7 @@ footer{
     color:white;
     min-height: 100px;
     text-align: center;
-    margin-top: 35px;
+    margin-top: ;
 }
 
 .icon{
@@ -183,7 +188,8 @@ footer p{
 
 @media (min-width: 576px) {
     body{
-        grid-template-columns: 2fr 6fr;
+        grid-template-rows: auto 1fr auto ;
+        grid-template-columns: 350px 1fr;
         grid-template-areas: 
         'menu filtros'
         'menu principal'
@@ -215,12 +221,19 @@ footer p{
         height: 60px;
     }
 
-    .ocultas{
-        display: inline;
+    .cards {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    }
+
+    .card:nth-child(n) {
+        display: flex;
+    }
+
+    .card{
+
     }
 
     .ocultas2{
-        display: inline;
         display: flex;
         flex-direction: column;
         text-align: center;
