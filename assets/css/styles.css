@@ -135,7 +135,6 @@ main{
 .card button {
     background-color: black;
     color: white;
-    padding: 16px;
     font-size: 16px;
     width: 200px; 
     height: 50px; 
@@ -222,6 +221,43 @@ footer p{
 
     .cards {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    }
+
+    .card{
+        padding-top: 15px;
+        padding-bottom: 7px;
+    }
+
+    .card img{
+        width: 270px;
+        height: 200px;
+    }
+
+    .card div{
+        padding: 0px;
+        padding-top: 20px;
+        width: 270px;
+    }
+
+    .card h2{
+        margin: 0%;
+        font-size: 21px
+    }
+
+    .card-text{
+        padding-top: 10px;
+        font-size: 13px;
+    }
+
+    .card-price{
+        margin: 10px;
+        font-size: 15px;
+    }
+
+    .card button {
+        font-size: 13px;
+        width: 175px; 
+        height: 30px; 
     }
 
     .card:nth-child(n) {
