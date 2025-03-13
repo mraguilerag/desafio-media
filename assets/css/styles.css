@@ -135,9 +135,9 @@ main{
 .card button {
     background-color: black;
     color: white;
-    padding: 16px; /* Aumenta el padding */
-    font-size: 16px; /* Aumenta el tamaño de la fuente */
-    width: 200px; /* Ajusta el ancho */
+    padding: 16px;
+    font-size: 16px;
+    width: 200px; 
     height: 50px; 
     align-self: center;
     font-family: "Montserrat";
@@ -169,7 +169,6 @@ footer{
     color:white;
     min-height: 100px;
     text-align: center;
-    margin-top: ;
 }
 
 .icon{
@@ -229,10 +228,6 @@ footer p{
         display: flex;
     }
 
-    .card{
-
-    }
-
     .ocultas2{
         display: flex;
         flex-direction: column;
@@ -241,26 +236,3 @@ footer p{
         
     }
 }
-
-/*
-    nav img{
-        width: 400px;
-        margin-top: 15px;
-        margin-left: 25px;
-    }
-    
-    .menu-item{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .cards{
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .card{
-        width: 40%;
-    }
-}
-    */
